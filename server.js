@@ -14,6 +14,7 @@ app.set("views", "./views");
 
 //INDUCES for pokemon
 
+//index route//
 app.get("/", (req, res) => {
   res.send("Welcome to the Pokemon App");
 });
@@ -22,6 +23,10 @@ app.get("/pokemon", (req, res) => {
   res.render("Index", { pokemon });
 });
 
+//show route
+app.get("/pokemon/:id", (req, res) => {
+  res.send(req.params.id);
+});
 //Listen
 app.listen(PORT, () => {
   console.log(`listening on port: ${PORT}`);
