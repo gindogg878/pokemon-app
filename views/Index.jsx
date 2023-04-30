@@ -11,6 +11,15 @@ class Index extends React.Component {
     return (
       <div>
         <h1 style={myStyle}>Pokemon Index Page</h1>
+        <ul>
+          {pokemon.map((poke, i) => {
+            return (
+              <li key={i}>
+                {poke.name.charAt(0).toUpperCase() + poke.name.slice(1)}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     );
   }
