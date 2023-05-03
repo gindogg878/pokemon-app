@@ -9,9 +9,10 @@ class Show extends React.Component {
       <div>
         <h1>'Gotta Catch 'Em All'</h1>
         <h2>{pokemon.name}</h2>
-        <img src={(newName += ".jpg")} alt={pokemon.name} /> <br />
         <br />
-        <a href="/">Home page</a>
+        <img src={(newName += ".jpg")} alt={pokemon.name} />
+        <br />
+        <a href="/pokemon">Pokemon Index Page</a>
       </div>
     );
   }
